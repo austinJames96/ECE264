@@ -1,0 +1,17 @@
+// Makefile for Lab5
+// ECE264
+// Austin Sypolt
+
+all: main mainsize complexCalcs
+
+clean:
+	rm -f main 1 complexCalcs
+
+
+complexCalcs: complexCalcs.c 
+	cc -o complexCalcs complexCalcs.c -lm 
+	// Need to use lm for sin and cos operations 
+
+mainsize: mainsize.c 
+	cc -o mainsize mainsize.c 
+

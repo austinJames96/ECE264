@@ -1,0 +1,8 @@
+all: lab13_ECE264_AustinSypolt.c
+
+clean:
+	rm -f lab13_ECE264_AustinSypolt.c
+	
+test: lab13_ECE264_AustinSypolt.c
+		gcc -o test lab13_ECE264_AustinSypolt.c
+		
